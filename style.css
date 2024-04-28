@@ -1,0 +1,416 @@
+*{
+    font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box; 
+    
+    
+}
+
+html {
+    font-size: 62.5%;
+} 
+
+body {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 2rem; 
+    margin:0;  
+    line-height: 1.6; 
+   
+}
+
+h1,h2,h3,h4{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+}
+
+h1,
+.h1 {
+  font-size: 3.1rem;
+}
+
+h2,
+.h2 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+h3,
+.h3 {
+  font-size: 2.1rem;
+}
+h4,
+.h4{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    
+    max-width: 100%; 
+    height: auto; 
+}
+li{
+    margin-bottom: 2rem;
+}
+
+section {
+    color: #000;
+  
+}
+
+.section-title{
+    font-size: 3.8rem;
+
+}
+.sectionheader{
+    text-align: center;
+    
+}
+
+.list-unstyled{
+    list-style: none;
+    margin: 0;
+    padding:0;
+    font-size: 1rem;
+}
+
+.container{
+    padding:1rem 2rem;
+
+   
+
+}
+
+.d-flex{
+    display: flex;   
+    align-items: center; 
+    justify-content: space-between;
+
+}
+
+.grid{ 
+    display: flex;
+    flex-wrap: wrap;
+    padding:0;
+    text-align: center;
+    
+}
+
+.grid__item{
+    display: inline-block; 
+    width: 100%;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.grid__item img{
+     width: 30rem; 
+     height: auto;
+     display: block;
+     margin: 0 auto;
+}
+
+
+     
+}
+
+@media screen and (min-width:750px){ 
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+    
+      .grid__item {
+        max-width: 50%;
+      }
+    }
+    
+
+section {
+    padding:9rem 0;
+}
+
+
+.header {
+    background: #ffffff;
+    border-bottom:1px solid; 
+    position: sticky; 
+    top: 0;
+
+ }
+
+.header .logo{
+    font-family: 'Poppins', sans-serif;
+                                                    
+    letter-spacing: 2px;                                                
+    font-size:1rem ;
+}
+
+.header li{   
+    display: inline-flex;
+    align-items: center;
+    padding: 0 .9rem;
+    font-size: 150%;
+}
+
+.header a { 
+    color :#333
+}
+.header .right{
+    display: flex;
+    align-items: center;
+
+}
+
+.barre-de-navigation{
+    display: none;
+
+}
+.social-media{
+    display: flex;
+}
+
+
+.burger{
+    background: none;
+    border:none ;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    position:relative;
+    margin: 1rem;
+}
+
+.burger .bar{
+    display: block;
+    width:22px;
+    height: 3px;
+    background: #333;
+}
+
+
+.burger .bar::before, .burger .bar::after{
+    display: block;
+    content:"";
+    width: 22px;
+    height: 3px;
+    background: #333;
+    position:absolute;
+}
+
+.burger .bar::before{
+    top:0;
+    transform: translateY(8px);
+}
+
+.burger .bar::after{
+    bottom:0;
+    transform: translateY(-8px);
+}
+
+
+@media screen and (max-width:749px){
+    .section-header{
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (min-width:750px){
+    .barre-de-navigation{
+        display: flex;
+    }
+    .burger{
+        display: none;
+    }
+}
+/*acceuil*/
+.index{
+    background: #033001;
+    color: #fff;
+    padding: 10rem ;
+     
+}
+.index h2{
+    font-size: x-large;
+}
+.index .title{
+    color: white;
+   font-size: 4rem;
+    margin: 1.6rem 0 0 0;
+    font-weight: 700;
+   
+}
+
+
+.index__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.index__item span{
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+
+
+.about .section-title{
+    margin-top: 2.8rem;
+
+}
+.skills{
+    background :#d3d6db;
+
+}
+
+
+.skills li{
+    background-color: #F5F5F5;
+    border-left: 3px solid;
+    padding:.9rem 2rem;
+}
+
+.skills .progressbar{
+    background: #d3d6db;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skills .bar{
+    background:#058073 ;
+    padding: 2rem;
+    
+}
+
+@media screen and (min-width:750px){
+    .projets .grid__item{
+        max-width:100%;
+    
+    }
+    
+}
+
+
+@media screen and (max-width:749px){
+    .projets .grid__item{
+    max-width:100%;
+    
+}
+}
+.projets {          
+    background: #d3d6db;
+    
+}
+.projets p{
+    font-size: 2rem;
+
+}
+
+.img_cv{
+    background-color: #d3d6db;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.btn{
+    border: none;
+    width:auto;
+    color: #d3d6db;
+    
+    min-width: 160px;
+    
+}
+
+
+.contact{
+    background: #d3d6db;
+
+}
+
+.form{
+    max-width: 800px;
+    margin:4rem auto 0 auto;
+    
+}
+
+.form input, .form textarea{
+    display: block;
+    width:100%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form textarea{
+    min-height: 200px;
+}
+
+.form .btn{
+    border: none;
+    background: #000;
+    width:auto;
+    color: #fff;
+    min-width: 160px;
+    text-transform: uppercase;
+}
+.form .btn:hover{
+    cursor: pointer;
+}
+
+footer{
+    background: #000;
+    color: #eee;
+    text-align: center;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    border: 2px solid #ccc; /* Ajoute une bordure autour du tableau */
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd; /* Garde la ligne de séparation horizontale pour les cellules */
+    border-right: 1px solid #ddd; /* Ajoute une séparation verticale entre les cellules */
+}
+
+th {
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd; /* Assure que les en-têtes ont aussi une bordure verticale */
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+a {
+    color: #2a5db0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pour assurer que la dernière colonne n'a pas une bordure à droite qui pourrait sembler redondante */
+th:last-child, td:last-child {
+    border-right: none;
+}
